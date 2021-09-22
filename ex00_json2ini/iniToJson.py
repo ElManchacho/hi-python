@@ -19,6 +19,6 @@ for section in sections :
 		sect[attr] = value
 	txt[section] = sect
 
-fichier_converti = open("fichier_converti.json", "w")
+fichier_converti = open("dataEnd.json", "w")
 json.dump(txt, fichier_converti, indent = 4)
 fichier_converti.close()
