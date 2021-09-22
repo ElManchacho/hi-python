@@ -1,5 +1,7 @@
 {
-    "Nom": "LEROY DUCARDONNOY",
-    "Prenom": "Paul",
-    "Age": "21"
+    "eleve": {
+        "nom": "LEROY DUCARDONNOY",
+        "prenom": "Paul",
+        "age": "21"
+    }
 }

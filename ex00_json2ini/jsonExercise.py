@@ -1,17 +1,24 @@
+import configparser
 import json
 
-fichier = 'data.txt'
+fichier = 'data.ini'
 
-dict1 = {}
+txt = {}
 
-with open(fichier) as file:
+cfg = configparser.ConfigParser()
 
-	for line in file:
+cfg.read(fichier)
 
-		attr, value = line.strip().split(None, 1)
+sections = cfg.sections()
 
-		dict1[attr] = value.strip()
+for section in sections :
+	attrList = cfg[section].keys()
+	sect = {}
+	for attr in attrList :
+		value = cfg.get(section,attr)
+		sect[attr] = value
+	txt[section] = sect
 
 fichier_converti = open("fichier_converti.json", "w")
-json.dump(dict1, fichier_converti, indent = 4)
+json.dump(txt, fichier_converti, indent = 4)
 fichier_converti.close()
