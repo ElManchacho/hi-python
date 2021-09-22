@@ -1,0 +1,19 @@
+{
+    "eleves":[
+        {
+            "Nom": "LEROY DUCARDONNOY",
+            "Prenom": "Paul",
+            "Age": "21"
+        },
+        {
+            "Nom": "COLLAS",
+            "Prenom": "Paul",
+            "Age": "21"
+        },
+        {
+            "Nom": "CLEMENT",
+            "Prenom": "Arthur",
+            "Age": "21"
+        }
+    ]
+}
